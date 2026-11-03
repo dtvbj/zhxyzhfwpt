@@ -735,7 +735,6 @@
       <div class="k">EASTER EGG FOUND</div>
       <h2>你点到了郑航的入口</h2>
       <p>这枚校徽下面，藏着一扇通往<br/>学校官网的门。</p>
-      <div class="url">www.zua.edu.cn</div>
       <button class="btn primary" id="eggGo">进入学校官网</button>
       <button class="btn ghost" id="eggClose">留在原型里</button>
     </div>
@@ -1651,7 +1650,7 @@ $('#eggClose').onclick = ()=> $('#eggLayer').classList.remove('show');
 /* ===== 彩蛋 2：首页右上角图标 =====
    以后把网址填进 EGG2_URL（例如 'https://xxx.com'），这个按钮就自动变成跳转入口，
    不用改任何其它代码。留空时是占位提示。 */
-const EGG2_URL = 'https://zzhkht.pages.dev/';
+const EGG2_URL = 'https://zuaxiaoyuanditu.pages.dev/';
 $('#eggFly').addEventListener('click', ()=>{
   const filled = !!EGG2_URL;
   $('#egg2Title').textContent = filled ? '这枚纸飞机有去处了' : '这枚按钮还没起飞';
