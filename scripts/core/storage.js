@@ -99,7 +99,6 @@ Campus.Storage = (() => {
       if (oldUser) try { output.user={ ...output.user,...JSON.parse(oldUser) }; } catch { notices.push('旧版个人资料格式损坏，已保留原始存储。'); }
       if (oldSnaps) try { const parsed=JSON.parse(oldSnaps); if (!Array.isArray(parsed)) throw new Error(); output.snaps=parsed; } catch { notices.push('旧版随拍格式损坏，已保留原始存储。'); }
       const normalized = normalize(output);
-      if (oldUser || oldSnaps) notices.push('已迁移旧版个人资料和有效随拍，旧版存储仍保留。');
       return normalized;
     }
     function save(value) {
