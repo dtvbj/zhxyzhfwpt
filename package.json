@@ -1,0 +1,13 @@
+{
+  "name": "campus-services-v21",
+  "version": "2.1.0",
+  "private": true,
+  "devDependencies": {
+    "playwright": "1.62.1"
+  },
+  "scripts": {
+    "dev": "node tools/server.mjs",
+    "test": "node --test tests/core.test.cjs",
+    "test:browser": "node tests/browser.mjs"
+  }
+}

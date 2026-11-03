@@ -1,0 +1,5 @@
+node_modules/
+test-results/
+backup-v2*/
+*.log
+.DS_Store
